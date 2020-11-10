@@ -1,0 +1,75 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body
+{
+background: hsla(214, 83%, 49%, 0.863);
+}
+
+.text
+{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 45%;
+    left: 45%;
+    transform: translateX(-45%) translateY(-45%);
+    transition: .5s;
+}
+
+.text span
+{
+    background: #fff;
+    color: #a0a0a0a0;
+    width: 120px;
+    height: 120px;
+    display: block;
+    line-height: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: left;
+    font-size: 45px;
+    transition: .5s;
+}
+.text:hover span:nth-child(1)
+{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.text:hover span:nth-child(6)
+{
+    border-top-Right-radius: 3px;
+    border-bottom-Right-radius: 3px;
+}
+
+.text:hover span:nth-child(6)
+{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.text:hover span:nth-child(1)
+{
+    border-top-Right-radius: 2px;
+    border-bottom-Right-radius: 2px;
+}
+
+.text:hover span:nth-child(odd)
+{
+    transform: skewY(-15deg);
+    color: #b5b5b5;
+    box-shadow: 0 60px 20px rgba(0, 0, 0, .1);
+}
+.text:hover span:nth-child(even)
+{
+    transform: skewY(15deg);
+    color: #b5b5b5;
+    box-shadow: 0 60px 20px rgba(0, 0, 0, .1), inset 0px 0 30px rgba(0, 0, 0, .2);
+}
+.text:hover 
+{
+    transform: translateX(35deg);
+}
